@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Login Page </title>
+  
+ <style>
+   body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #34495e;
+}
+
+.form-logo{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #191919;
+  box-shadow: 1px 1px 1px #191919;
+}
+
+
+h1{
+   color: #fff;
+   text-transform: uppercase;
+   text-align: center;
+   text-shadow: 1px 1px 1px #fff;
+}
+
+input[type="text"], input[type="password"]{
+  border: 0px;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #fff;
+  border-radius: 24px;
+  transition: 0.24s;
+  outline: none;
+}
+
+input[type="submit"]{
+  border: 0px;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid green;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #fff;
+  border-radius: 24px;
+  transition: 0.25s;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+   width: 280px;
+   border: 2px solid red;
+}
+
+
+
+
+
+
+
+
+
+ </style>
+</head>
+<body>
+  
+  <form class="form-logo" action="/index" method="POST">
+     <h1>Login</h1>
+     <input type="text" name="" placeholder="username">
+     <input type="password" name="" placeholder="password">
+     <input type="submit" value="Login">
+  </form>
+  
+</body>
+</html>
